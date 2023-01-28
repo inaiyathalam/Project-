@@ -1,0 +1,56 @@
+body{
+    background-color: rgb(164, 224, 45);
+}
+
+h1{
+    margin-bottom: 50px;
+}
+
+.lgin {
+    margin-top: 200px;
+    text-align: center;
+    
+}
+
+#username{
+    margin-bottom: 30px;
+}
+
+label{
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+input{
+    font-size: 20px;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+input::placeholder{
+    font-size: 13px;
+}
+
+#submit{
+    margin-top:40px;
+    border: none;
+    background-color: green;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 20px;
+}
+
+#nuser{
+    margin-left: 550px;
+    color: rgb(237, 8, 168);
+}
+
+a{
+    color: black;
+}

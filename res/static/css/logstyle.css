@@ -7,7 +7,7 @@ h1{
 }
 
 .lgin {
-    margin-top: 200px;
+    margin-top: 130px;
     text-align: center;
     
 }
@@ -53,4 +53,21 @@ input::placeholder{
 
 a{
     color: black;
+}
+
+ul{
+    list-style: none;
+    margin-left: 700px;
+    display: flex;
+    margin-top: 40px;
+
+}
+
+ul li{
+    margin-right: 70px;
+    color: rgba(0, 0, 0, 0.614);
+}
+
+a{
+    text-decoration: none;
 }

@@ -20,7 +20,12 @@
 
     <form method="POST" action="register">
         {% csrf_token %}
-
+        <ul>
+            <a href="/"><li>Home</li></a>
+            <li>Product</li>
+            <li>Service</li>
+            <li>Contact</li>
+        </ul>
         <div class="lgin">
             <h1>Sign in</h1>
             <input type="text" id="username" name="username" placeholder="Create your Username"><br>
@@ -28,7 +33,9 @@
             <input type="password" id="password" name="password" placeholder="Enter your Password"><br>
             <input type="password" id="password2" name="password2" placeholder="Repeat your Password"><br>
             <input type="submit" id="submit">
+            
         </div>
+        <p id="nuser">Already Have an Account?<a href="login">Login Here</a></p>
 
     </form>
 

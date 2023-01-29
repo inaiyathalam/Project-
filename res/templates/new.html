@@ -11,6 +11,7 @@
 <body>
     <form method="POST" action="new">
         {%csrf_token%}
+
         <div id="whole">
         <div class="left">
             <img src="/static/img/log-img.jpg" id="log-img">
@@ -18,7 +19,13 @@
             <p id="p1">It should only take a couple of minutes</p>
             <p id="p2">to pair with your watch</p>
         </div>
+
         <div class="lgin">
+            <ul>
+                <a href="/"><li>Home</li></a>
+                <a href="username"><li>Previous Resume</li></a>
+
+            </ul>
             <label for="username">UserName</label>
             <input type="text" id="username" name="username" placeholder="Same as your current username *"><br>
             <label for="name">Name</label>
@@ -53,6 +60,7 @@
             <input type="text" id="des3" name="des3" placeholder="Description"><br>
             <label for="eq">Education</label>
             <input type="text" id="eq" name="eq" placeholder="Enter your Educational Qualification"><br>
+            
             <input type="submit" id="submit">
 
             

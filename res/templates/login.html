@@ -21,8 +21,14 @@
 
     <form method="POST" action="login">
         {%csrf_token%}
+        <ul>
+            <a href="/"><li>Home</li></a>
+            <li>Product</li>
+            <li>Service</li>
+            <li>Contact</li>
+        </ul>
         <div class="lgin">
-            <h1>Hello Again!</h1>
+            <h1>Hi There!</h1>
             <label for="username">Username</label>
             <input type="text" id="username" name="username" placeholder="Enter your Username"><br>
             <label for="password">Password</label>

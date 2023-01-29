@@ -19,10 +19,12 @@ class Person(models.Model):
     we1 = models.CharField(max_length=100, blank=True)
     we2 =models.CharField(max_length=100, blank=True)
     we3 = models.CharField(max_length=100, blank=True)
-    des1 = models.CharField(max_length=1000, blank=True)
-    des2 =models.CharField(max_length=1000, blank=True)
-    des3=models.CharField(max_length=1000, blank=True)
+    des1 = models.CharField(max_length=120, blank=True)
+    des2 =models.CharField(max_length=120, blank=True)
+    des3=models.CharField(max_length=120, blank=True)
     eq= models.CharField(max_length=100, blank=True)
     selfdesc= models.CharField(max_length=1000, blank=True)
+class Uname(models.Model):
+    uname = models.CharField(max_length=100, blank=True)
 
 

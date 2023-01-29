@@ -17,7 +17,7 @@ body{
 }
 
 .lgin{
-    margin-left: 250px;
+    margin-left: 100px;
     margin-top: 100px;
 }
 
@@ -37,9 +37,12 @@ input::placeholder{
 label{
     font-size: 20px;
 }
-
+#username{
+    margin-top: 80px;
+}
 #name{
     margin-left: 100px;
+
     
 }
 
@@ -97,4 +100,22 @@ h3{
 #submit{
     font-size: 25px;
     
+}
+
+ul{
+    list-style: none;
+    margin-left: 200px;
+    display: flex;
+    margin-top: -70px;
+
+}
+
+ul li{
+    margin-right: 70px;
+    
+    color: rgba(0, 0, 0, 0.614);
+}
+
+a{
+    text-decoration: none;
 }

@@ -48,3 +48,29 @@ input::placeholder{
     margin-bottom: 0px;
     margin-right: 80px;
 }
+
+ul{
+    list-style: none;
+    margin-left: 700px;
+    display: flex;
+    margin-top: 40px;
+
+}
+
+ul li{
+    margin-right: 70px;
+    
+    color: rgba(0, 0, 0, 0.614);
+}
+
+a{
+    text-decoration: none;
+}
+
+#nuser{
+    margin-left: 980px;
+    color: white;
+}
+a{
+    color: rgb(255, 255, 0);
+}

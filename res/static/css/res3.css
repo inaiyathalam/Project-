@@ -42,17 +42,17 @@ p{
 }
 
 #name{
-    margin-left: 400px;
+    text-align: center;
     margin-top: 10px;
 }
 
 #post{
-    margin-left: 350px;
+    text-align: center;
     margin-top: 5px;
 }
 
 #we{
-    margin-left: 300px;
+    text-align: center;
     margin-top: 50px;
 }
 
@@ -67,7 +67,7 @@ p{
 
 #ed{
     margin-top: 100px;
-    margin-left: 300px;
+    text-align: center;
 }
 
 #eq{

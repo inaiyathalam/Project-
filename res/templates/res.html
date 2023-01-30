@@ -14,7 +14,7 @@
 <body>
     {%if user.is_authenticated%}
     {%for person in persons%}
-    {%if person.username == user.username or uname.uname == user.username%}
+    {%if person.username == user.username%}
     <div class="whole">
         <div class="lside">
             <img src="/static/img/log.webp" id="profile">
@@ -55,3 +55,10 @@
     
 </body>
 </html>
+
+<script>
+    function down(){
+        window.print();
+    }
+
+</script>

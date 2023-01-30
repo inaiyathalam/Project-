@@ -2,7 +2,7 @@ from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from django.contrib.auth.models import User, auth
 from django.contrib import messages
-from .models import Person, Uname
+from .models import Person
 
 def index(request):
     return render(request, 'index.html')
@@ -76,8 +76,7 @@ def new(request):
 
 def res(request):
     persons = Person.objects.all()
-    unames = Uname.objects.all()
-    return render(request,'res.html',{"persons":persons, "unames":unames})
+    return render(request,'res.html',{"persons":persons})
 
 def templ(request):
     return render(request,'templ.html')
@@ -94,14 +93,17 @@ def res4(request):
     persons = Person.objects.all()
     return render(request,'res4.html',{"persons":persons})
 
-def username(request):
-    if request.method=="POST":
-        uname = request.POST["username"]
-        username = Uname(uname = uname)
-        username.save()
-        return redirect('res')
-    return render (request, 'username.html')
+
 
 def logout(request):
     auth.logout(request)
     return redirect('/')
+
+def mydata(request):
+    persons = Person.objects.all()
+    return render(request, 'mydata.html',{"persons":persons})
+
+def delete(request, id):
+  person = Person.objects.get(id=id)
+  person.delete()
+  return render(request, 'delete.html')

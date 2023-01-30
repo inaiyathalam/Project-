@@ -24,7 +24,3 @@ class Person(models.Model):
     des3=models.CharField(max_length=120, blank=True)
     eq= models.CharField(max_length=100, blank=True)
     selfdesc= models.CharField(max_length=1000, blank=True)
-class Uname(models.Model):
-    uname = models.CharField(max_length=100, blank=True)
-
-

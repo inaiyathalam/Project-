@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {%if user.is_authenticated%}
+    {%for person in persons%}
+    {%if person.username == user.username %}
+    <a href="/"><li>Home</li></a>
+    <a href="new"><li>Build Resume</li></a>
+    <li>Service</li>
+    <li>Contact</li>
+    <h4>Name: {{person.name}}</h4>
+    <h4>Post: {{person.post}}</h4>
+    <h4>Work Experience 1: {{person.we1}}</h4>
+    <h4>Work Experience 2: {{person.we2}}</h4>
+    <h4>Work Experience 3: {{person.we3}}</h4>
+    <h4>Work Description 1: {{person.des1}}</h4>
+    <h4>Work Description 2: {{person.des2}}</h4>
+    <h4>Work Description 3: {{person.des3}}</h4>
+    <h4>Education: {{person.eq}}</h4>
+    <h1>________________________________________________</h1><br><br>
+    <a href="delete/{{person.id}}"><h1>Delete:</h1></a>
+    {%endif%}
+    {%endfor%}
+    {%endif%}
+</body>
+</html>

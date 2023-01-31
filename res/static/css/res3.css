@@ -1,11 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 *{
     margin: 0px;
 }
 body{
     background-color: rgb(206, 190, 74);
-
 }
-
 
 
 .whole{
@@ -15,13 +14,13 @@ body{
     
     height: 1000px;
     width: 300px;
-    background-color:rgb(223, 184, 184);
+    background-color:#c5aa86;
 }
 
 .rside{
     height: 1000px;
     width: 1070px;
-    background-color: rgb(196, 130, 130);
+    background-color: #b5a20e;
 }
 
 #profile{
@@ -43,36 +42,45 @@ p{
 
 #name{
     text-align: center;
-    margin-top: 10px;
+    margin-top: 20px;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 500;
 }
 
 #post{
     text-align: center;
-    margin-top: 5px;
+    margin-top: 15px;
 }
-
+#selfdesc{
+    margin-top: 20px;
+    margin-left: 80px;
+    max-width: 800px;
+}
 #we{
     text-align: center;
-    margin-top: 50px;
-}
-
-#we1,#we2,#we3{
-    margin-left: 50px;
-}
-
-#des1,#des2,#des3{
-    margin-left: 80px;
+    margin-top: 30px;
     margin-bottom: 20px;
 }
 
+#we1,#we2,#we3{
+    margin-left: 80px;
+}
+
+#des1,#des2,#des3{
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+
+#edu{
+    display: flex;
+}
 #ed{
-    margin-top: 100px;
-    text-align: center;
+    margin-top: 30px;
+    margin-left: 300px;
 }
 
 #eq{
-    margin-left: 280px;
-    margin-top: 10px;
+    margin-top: 35px;
 }
 
 
@@ -83,3 +91,11 @@ p{
 li{
     margin-left: 40px;
 }
+
+#dash{
+    margin-left: 300px;
+    margin-top: 5px;
+    color: #e8cca6;
+    font-weight: bolder;
+}
+

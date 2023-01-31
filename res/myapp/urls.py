@@ -13,5 +13,6 @@ urlpatterns=[
     path('res4',views.res4,name='res4'),
     path('logout', views.logout, name='logout'),
     path('mydata',views.mydata,name='mydata'),
+    path('mydata2',views.mydata2,name='mydata2'),
     path('delete/<int:id>', views.delete, name='delete'),
 ]

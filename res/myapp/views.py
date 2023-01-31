@@ -107,3 +107,8 @@ def delete(request, id):
   person = Person.objects.get(id=id)
   person.delete()
   return render(request, 'delete.html')
+
+def mydata2(request):
+    
+    persons = Person.objects.all()
+    return render(request, 'mydata2.html',{"persons":persons})

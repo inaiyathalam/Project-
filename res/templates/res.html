@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{%static 'css/resstyle.css' %}">
 </head>
-<body>
+<body onclick="downl()">
     {%if user.is_authenticated%}
     {%for person in persons%}
     {%if person.username == user.username%}
@@ -57,7 +57,7 @@
 </html>
 
 <script>
-    function down(){
+    function downl(){
         window.print();
     }
 

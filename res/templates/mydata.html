@@ -5,14 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #note{
+            color: rgb(176, 6, 6);
+        }
+    </style>
 </head>
 <body>
     {%if user.is_authenticated%}
     {%for person in persons%}
     {%if person.username == user.username %}
+    <h1 id="note">Please make sure to have only one data form and delete all others to avoid errors</h1>
     <a href="/"><li>Home</li></a>
     <a href="new"><li>Build Resume</li></a>
-    <li>Service</li>
+    <a href="templ"><li>Template</li></a>
     <li>Contact</li>
     <h4>Name: {{person.name}}</h4>
     <h4>Post: {{person.post}}</h4>

@@ -8,7 +8,10 @@
     display: flex;
 }
 
-
+#logoname{
+    margin-top: 30px;
+    margin-left: 20px;
+}
 .body{
     height: 900px;
     width: 100%;
@@ -46,8 +49,15 @@ ul li{
     margin-top: 30px;
     margin-left: 40px;
 }
+.body{
+    display: flex;
+}
+#cont{
+    margin-top: 200px;
+    margin-left: 500px;
+}
 
-#buil{
-    margin-top: 100px;
-    margin-left: 10px;
+#but{
+    margin-top: 280px;
+    margin-left: -200px;
 }

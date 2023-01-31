@@ -71,7 +71,7 @@ def new(request):
         selfdesc=request.POST["selfdesc"]
         new_person = Person(username=username, name=name, mobile=mobile, email=email, city=city,skill1=skill1,skill2=skill2,skill3=skill3,post=post,we1=we1,we2=we2,we3=we3,des1=des1,des2=des2,des3=des3,eq=eq,selfdesc=selfdesc)
         new_person.save()
-        return redirect('templ')
+        return redirect('mydata')
     return render(request,'new.html')
 
 def res(request):

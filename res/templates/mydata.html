@@ -1,3 +1,5 @@
+{% load static%}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,33 +7,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        #note{
-            color: rgb(176, 6, 6);
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="{%static 'css/mydata.css' %}">
+
 </head>
+
+
 <body>
-    {%if user.is_authenticated%}
-    {%for person in persons%}
-    {%if person.username == user.username %}
-    <h1 id="note">Please make sure to have only one data form and delete all others to avoid errors</h1>
-    <a href="/"><li>Home</li></a>
-    <a href="new"><li>Build Resume</li></a>
-    <a href="templ"><li>Template</li></a>
-    <li>Contact</li>
-    <h4>Name: {{person.name}}</h4>
-    <h4>Post: {{person.post}}</h4>
-    <h4>Work Experience 1: {{person.we1}}</h4>
-    <h4>Work Experience 2: {{person.we2}}</h4>
-    <h4>Work Experience 3: {{person.we3}}</h4>
-    <h4>Work Description 1: {{person.des1}}</h4>
-    <h4>Work Description 2: {{person.des2}}</h4>
-    <h4>Work Description 3: {{person.des3}}</h4>
-    <h4>Education: {{person.eq}}</h4>
-    <a href="delete/{{person.id}}"><h1>Delete the above</h1></a>
-    {%endif%}
-    {%endfor%}
-    {%endif%}
+
+    <div class="top">
+        <ul>
+            <a href="/"><li>Home</li></a>
+            <a href="new"><li>Build Resume</li></a>
+            <a href="templ"><li>Template</li></a>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <h1 id="note">Please make sure to have only one data Table and delete all others to avoid errors</h1>
+    <div class="bottom">
+        {%if user.is_authenticated%}
+        {%for person in persons%}
+        {%if person.username == user.username %}
+
+
+        <table class="list">
+
+            <tr>
+                <th>Name</th>
+                <td>{{person.name}}</td>
+            </tr>
+            <tr>
+                <th>Post</th>
+                <td>{{person.post}}</td>
+            </tr>
+            <tr>
+                <th>Work Experience 1</th>
+                <td>{{person.we1}}</td>
+            </tr>
+            <tr>
+                <th>Description 1</th>
+                <td>{{person.des1}}</td>
+            </tr>
+            <tr>
+                <th>Work Experience 2</th>
+                <td>{{person.we2}}</td>
+            </tr>
+            <tr>
+                <th>Work Description 2</th>
+                <td>{{person.des2}}</td>
+            </tr>
+            <tr>
+                <th>Work Experience 3</th>
+                <td>{{person.we3}}</td>
+            </tr>
+            <tr>
+                <th>Description 3</th>
+                <td>{{person.des3}}</td>
+            </tr>
+            <tr>
+                <th>Education</th>
+                <td>{{person.eq}}</td>
+            </tr>
+        </table>
+    
+        <a href="delete/{{person.id}}"><h1 id="del">Delete the above</h1></a>
+        {%endif%}
+        {%endfor%}
+        {%endif%}
+    </div>
+
 </body>
 </html>

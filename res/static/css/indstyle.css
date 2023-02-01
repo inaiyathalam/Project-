@@ -28,7 +28,11 @@ ul{
 ul li{
     margin-right: 70px;
     
-    color: rgba(0, 0, 0, 0.614);
+    color: rgba(0, 0, 0, 0.475);
+}
+
+ul li:hover{
+    color: rgb(0, 0, 0);
 }
 
 #login{
@@ -60,4 +64,13 @@ ul li{
 #but{
     margin-top: 280px;
     margin-left: -200px;
+    background-color: rgb(123, 245, 192);
+    height: 50px;
+    width: 130px;
+    border: none;
+    border-radius: 10px;
+}
+
+a{
+    text-decoration: none;
 }

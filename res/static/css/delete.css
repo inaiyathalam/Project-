@@ -1,0 +1,40 @@
+.top{
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+}
+.body{
+    height: 900px;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+ul{
+    list-style: none;
+    margin-left: 400px;
+    display: flex;
+    margin-top: 40px;
+
+}
+
+ul li{
+    margin-right: 70px;
+    
+    color: rgba(0, 0, 0, 0.614);
+}
+
+a{
+    text-decoration: none;
+}
+
+.bottom{
+    margin-left: 500px;
+    margin-top: 150px;
+}
+
+#back{
+    background-color: rgb(132, 232, 232);
+    height: 50px;
+    width: 130px;
+}

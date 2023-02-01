@@ -1,0 +1,87 @@
+.top{
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+}
+.body{
+    height: 900px;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+ul{
+    list-style: none;
+    margin-left: 400px;
+    display: flex;
+    margin-top: 40px;
+
+}
+
+ul li{
+    margin-right: 70px;
+    
+    color: rgba(0, 0, 0, 0.614);
+}
+
+
+
+
+.list{
+    border-collapse: collapse;
+    margin: 25px 0px;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+.list tr{
+    background-color: #009879;
+    color: black;
+    text-align: left;
+    font-weight: bold;
+}
+
+.list th, .td td{
+    padding: 12px 15px;
+    
+    }
+
+.list tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+.list tr:nth-of-type(even){
+background-color: rgba(197, 239, 229, 0.954);
+}
+
+.list tr:nth-of-type(odd){
+background-color: rgba(243, 243, 190, 0.82);
+}
+
+.list tr:last-of-type{
+    border-bottom: 2px solid  #009879;
+}
+
+.list{
+    margin-left: 300px;
+}
+
+
+#note{
+    color: rgb(176, 6, 6);
+    font-size: 20px;
+    margin-left: 200px;
+}
+
+#del{
+    margin-left: 300px;
+
+}
+
+a{
+    
+    text-decoration: none;
+}
